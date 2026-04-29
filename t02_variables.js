@@ -12,7 +12,7 @@ console.log( "Running T1-intro.js");
 /****************************
  Main Code
  ****************************/
-console.log("Hi" + username +" as of " + year + "you are" + age " years old. You have" + money + " dollars")
+console.log("Hi "+ username +" as of " + year + " you are " + age + " years old. You have " + money + " dollars ")
 
 
 
