@@ -1,5 +1,5 @@
 /****************************
-Name of Task:
+Name of Task: Maths
 ****************************/
 console.log( "Running T1-intro.js");
 
@@ -13,6 +13,7 @@ console.log( "Running T1-intro.js");
  Main Code
  ****************************/
 console.log("Hi "+ username +" as of " + year + " you are " + age + " years old. You have " + money + " dollars ")
+
 
 
 
