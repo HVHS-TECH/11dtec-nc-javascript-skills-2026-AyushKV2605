@@ -17,7 +17,7 @@ console.log( "Running T1-intro.js");
  Main Code
  ****************************/
 console.log("Hi "+ username +" as of " + year + " you are " + age + " years old.")
-console.log()
+console.log("You were bron in " + birthyear)
 
 
 
