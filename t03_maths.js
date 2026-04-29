@@ -18,6 +18,8 @@ console.log( "Running T1-intro.js");
  ****************************/
 console.log("Hi "+ username +" as of " + year + " you are " + age + " years old.")
 console.log("You were born in " + birthyear)
+console.log("In 10 years you will be" + oldage + "years old" )
+
 
 
 
