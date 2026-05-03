@@ -20,11 +20,11 @@ console.log( "Running t05_javascriptandHtml.js");
  Main Code
  ****************************/
 OUTPUT.innerHTML += ("<p>Hi "+ username +" as of " + year + " you are " + age + " years old.</p>")
-OUTPUT.innerHTML += ("You were born in " + birthyear)
-console.log("In 10 years you will be " + oldAge + " years old")
-console.log("You have "+ money +" dollars")
-console.log(" You spend half your money, now you have "+  halfmoney + " dollars")
-console.log("Then you get $3, now you have " + (halfmoney + 3) +" dollars")
+OUTPUT.innerHTML += ("<p>You were born in " + birthyear)
+OUTPUT.innerHTML += ("<p>In 10 years you will be " + oldAge + " years old</p>")
+OUTPUT.innerHTML += ("<p>You have "+ money +" dollars</p>")
+OUTPUT.innerHTML += ("<p> You spend half your money, now you have "+  halfmoney + " dollars</p>")
+OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfmoney + 3) +" dollars</p>")
 
 
 
