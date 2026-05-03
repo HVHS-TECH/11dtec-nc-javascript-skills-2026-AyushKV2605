@@ -30,3 +30,4 @@ console.log("Then you get $3, now you have " + (halfmoney + 3) +" dollars")
  /****************************
   Functions
    ****************************/
+  
