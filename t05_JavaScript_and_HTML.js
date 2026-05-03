@@ -1,7 +1,7 @@
 /****************************
 Name of Task: Maths
 ****************************/
-console.log( "Running T1-intro.js");
+console.log( "Running t05_javascriptandHtml.js");
 
 //Variables
  let username =" Ayush ";
@@ -13,6 +13,8 @@ console.log( "Running T1-intro.js");
  oldAge = age + 10;
  birthyear = year - age
  halfmoney = money / 2
+ const OUTPUT = document.getElementById("spaceforJavaScriptOutput");
+ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>";
 
 /****************************
  Main Code
