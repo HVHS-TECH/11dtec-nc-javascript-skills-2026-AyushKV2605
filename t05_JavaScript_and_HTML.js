@@ -23,8 +23,8 @@ OUTPUT.innerHTML += "<p>Hi "+ username +" as of " + year + " you are " + age + "
 OUTPUT.innerHTML += "<p>You were born in " + "birthyear</p>";
 OUTPUT.innerHTML += "<p>In 10 years you will be " + oldAge + " years old</p>";
 OUTPUT.innerHTML += "<p>You have "+ money +" dollars</p>";
-OUTPUT.innerHTML += "<p> You spend half your money, now you have "+  halfmoney + " dollars</p>";
-OUTPUT.innerHTML += "<p>Then you get $3, now you have " + (halfmoney + 3) +" dollars</p>";
+OUTPUT.innerHTML += "<p> You spend half your money, now you have " +  halfmoney + " dollars</p>";
+OUTPUT.innerHTML += "<p>Then you get $3, now you have " + (halfmoney + 3) + " dollars</p>";
 
 
 
