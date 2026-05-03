@@ -11,7 +11,7 @@ console.log( "Running T1-intro.js");
  let birthyear;
  let oldage;
  oldAge = age + 10;
- birthyear = year - age;
+ birthyear = year - age
  halfmoney = money / 2
 
 /****************************
