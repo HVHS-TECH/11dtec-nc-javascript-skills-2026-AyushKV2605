@@ -20,7 +20,7 @@ console.log( "Running t05_javascriptandHtml.js");
 /****************************
  Main Code
  ****************************/
-OUTPUT.innerHTML += "<p>Hi " + username + " as of " + year + " you are " + age + " years old.</p>";
+writeLine += "<p>Hi " + username + " as of " + year + " you are " + age + " years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in " + birthyear +"</p>";
 OUTPUT.innerHTML += "<p>In 10 years you will be " + oldAge + " years old</p>";
 OUTPUT.innerHTML += "<p>You have "+ money +" dollars</p>";
@@ -33,4 +33,10 @@ OUTPUT.innerHTML += "<p>Then you get $3, now you have " + plusMoney + " dollars<
  /****************************
   Functions
    ****************************/
+  function writeLine(text) {
+    OUTPUT.innerHTML += "<p>" + text + "</p>";
+}
   
+function writeHeading(text) {
+    OUTPUT.innerHTML += "<h2>" + text + "</h2>";
+}
