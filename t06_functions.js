@@ -33,5 +33,7 @@ OUTPUT.innerHTML += "<p>Then you get $3, now you have " + plusMoney + " dollars<
  /****************************
   Functions
    ****************************/
-  
-  
+  function welcome() {
+    OUTPUT.innerHTML += "<p> Welcome to my shop</p>"
+  }
+  welcome ();
