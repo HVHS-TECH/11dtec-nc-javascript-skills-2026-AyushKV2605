@@ -12,4 +12,4 @@ const output = document.getElementById("spaceForJavaScriptOutput");
 function start() {
   console.log("Button pressed!");
 
-  output.innerHTML = "<p>You pressed the button!</p>";
+  output.innerHTML = "<p>You pressed the button!</p>";}
