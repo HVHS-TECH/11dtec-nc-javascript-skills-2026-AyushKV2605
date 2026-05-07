@@ -44,4 +44,3 @@ OUTPUT.innerHTML += "<p>Then you get $3, now you have " + plusMoney + " dollars<
 displayProduct("Chocolate bar", 4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.50);
-<button onClick="start()">START</button>
