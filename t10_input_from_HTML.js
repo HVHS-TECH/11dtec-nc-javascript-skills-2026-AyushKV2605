@@ -15,9 +15,3 @@ function start() {
   console.log("Button pressed!");
  output.innerHTML = "<p>You pressed the button!</p>";}
 
- <form onsubmit ="return false;">
- <label for="formname>Name:</label>"
- <input type="text" id="namefield" name="formname">
-    <input type
-
- </form>
