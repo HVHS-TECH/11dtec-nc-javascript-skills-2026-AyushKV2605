@@ -1,4 +1,4 @@
-console.log("Running Task 09...");
+console.log("Running Task 10...");
 
 const output = document.getElementById("spaceForJavaScriptOutput");
 
