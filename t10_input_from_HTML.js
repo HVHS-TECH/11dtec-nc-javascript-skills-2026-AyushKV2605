@@ -1,10 +1,12 @@
 console.log("Running Task 10...");
 
-const output = document.getElementById("spaceForJavaScriptOutput");
+
 
 /****************************
  Main Code
 ****************************/
+const OUTPUT = document.getElementById("JavaScriptOutput");
+OUTPUT.innerHTML = "Hello World!<br>"
 
 /****************************
  Functions
