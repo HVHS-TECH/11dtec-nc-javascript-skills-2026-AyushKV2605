@@ -20,13 +20,7 @@
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-
-
-  <div id="spaceForJavaScriptOutput">
-
-    The output of your script will go here.
-
-    <form onsubmit="return false;">
+   <form onsubmit="return false;">
       <label for="formname">Name:</label>"
       <input type="text" id="nameField" name="formname" value="Ayush">
    
@@ -45,10 +39,18 @@
     <form onsubmit="return false;">
       <label for="formname">Birth year:</label>"
       <input type="text" id="birthYearField" name="formname" value="2011">
+      <input type="submit" onclick=getFormInput() value="Submit">
   
     </form>
 
-    <input type="submit" onclick=getFormInput() value="Submit">
+
+
+  <div id="spaceForJavaScriptOutput">
+
+    The output of your script will go here.
+
+   
+    
 
   </div>
 
