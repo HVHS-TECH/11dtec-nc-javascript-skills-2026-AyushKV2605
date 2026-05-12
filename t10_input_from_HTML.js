@@ -14,3 +14,6 @@ OUTPUT.innerHTML = "Hello World!<br>"
 function start() {
   console.log("Button pressed!");
  output.innerHTML = "<p>You pressed the button!</p>";}
+ function getFormInput() {
+    
+ }
