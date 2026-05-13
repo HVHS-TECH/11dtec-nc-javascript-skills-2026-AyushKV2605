@@ -1,4 +1,4 @@
-* Paste/*********************************
+ Paste/*********************************
   name of task: Task 10 - Input from HTML
 *********************************/
 console.log("t10_input_from_HTML.js");
