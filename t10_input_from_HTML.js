@@ -15,7 +15,7 @@ function runTask10() {
   const NAME_FIELD = document.getElementById("nameField");
   const AGE_FIELD = document.getElementById("ageField");
   const MONEY_FIELD = document.getElementById("moneyField");
-  const YEAR_FIELD = document.getElementById("yearField");+4EE4
+  const YEAR_FIELD = document.getElementById("yearField");
 
   let username = NAME_FIELD.value;
   let age = Number(AGE_FIELD.value);
