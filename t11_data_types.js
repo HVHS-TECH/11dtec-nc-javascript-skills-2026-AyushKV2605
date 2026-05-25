@@ -41,7 +41,7 @@ let age = 15;
 let isAwake = true;
 
 let userAge = AGE_FIELD.value;
-let userAge = "15"
+
 
 var num1 = "50";
 num1+num1;
@@ -53,4 +53,3 @@ num1 = Number(num1);
 num1+num1;
 
 let userAgeString = AGE_FIELD.value;
-let userAge = Number(AGE_FIELD.value);
