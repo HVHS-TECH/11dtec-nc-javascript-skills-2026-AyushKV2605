@@ -40,7 +40,7 @@ let name = "Ayush";
 let age = 15;
 let isAwake = true;
 
-let userAge = AGE_FIELD.value;
+AGE_FIELD.value = userAge;
 
 
 var num1 = "50";
