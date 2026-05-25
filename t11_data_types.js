@@ -35,3 +35,10 @@ function runTask11() {
   OUTPUT.innerHTML += "<p>You spend half your money, you now have " + money/2 + " dollars</p>";
   OUTPUT.innerHTML += "<p>You get 3 dollars, now you have " + extraMoney + " dollars</p>";
 }
+
+let name = "Ayush";
+let age = 15;
+let isAwake = true;
+
+let userAge = AGE_FIELD.value;
+let userAge = "15"
