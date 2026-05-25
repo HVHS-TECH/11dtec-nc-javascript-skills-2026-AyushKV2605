@@ -51,3 +51,6 @@ num2+num2;
 
 num1 = Number(num1);
 num1+num1;
+
+
+let userAge = Number(AGE_FIELD.value);
