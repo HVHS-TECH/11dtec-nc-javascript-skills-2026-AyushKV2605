@@ -51,4 +51,4 @@ num2+num2;
 num1 = Number(num1);
 num1+num1;
 
-let userAgeString = AGE_FIELD.value;
+
