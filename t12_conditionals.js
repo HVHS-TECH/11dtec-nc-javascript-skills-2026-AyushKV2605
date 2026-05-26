@@ -33,10 +33,12 @@ function runTask11() {
   OUTPUT.innerHTML += "<p>You spend half your money, you now have " + money/2 + " dollars</p>";
   OUTPUT.innerHTML += "<p>You get 3 dollars, now you have " + extraMoney + " dollars</p>";
 }
-
-function start() {
-    spaceForJavaScriptOutput.innerHTML
-    spaceForJavaScriptOutput.innerHTML
-    answer = currentYear - userAge;
-    spaceForJavaScriptOutput.innerHTML
+if (age < 15){
+    console.log("Defininetaly too young");
+}
+if  (age >= 15){    
+    console.log("Might be too old");
+}
+if (age === 15){
+    console.log("Just right!");
 }
