@@ -8,7 +8,7 @@ console.log("Running t05_JavaScript_and_HTML.js");
 
 
 //variables
-let Username = "Anish";
+let Username = "Ayush";
 let year = 2026;
 let age = 15;
 let money = 20;

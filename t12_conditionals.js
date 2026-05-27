@@ -1,60 +1,81 @@
-/*********************************/
-console.log("t21_conditionals.js");
+/* Paste your code from task 7 here*/
 
-/*********************************
-  main code
-*********************************/
+/****************************************
+ * maths
+ */
 
-function runTask11() {
+console.log("Running t05_JavaScript_and_HTML.js");
 
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-  // get values from the form
-  const NAME_FIELD = document.getElementById("nameField");
-  const AGE_FIELD = document.getElementById("ageField");
-  const MONEY_FIELD = document.getElementById("moneyField");
-  const YEAR_FIELD = document.getElementById("yearField");
-
-  let username = NAME_FIELD.value;
-  let age = Number(AGE_FIELD.value);
-  let money = Number(MONEY_FIELD.value);
-  let year = Number(YEAR_FIELD.value);
-
-  // calculations
-  let birthYear = year - age;
-  let oldAge = age + 10;
-  let extraMoney = money + 3;
-
-  // output to HTML
-  OUTPUT.innerHTML = "<p>Hi " + username + " as of " + year + " you are " + age + " years old. You have " + money + " dollars.</p>";
-  OUTPUT.innerHTML += "<p>You were born in " + birthYear + "</p>";
-  OUTPUT.innerHTML += "<p>In ten years you will be " + oldAge + "</p>";
-  OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
-  OUTPUT.innerHTML += "<p>You spend half your money, you now have " + money/2 + " dollars</p>";
-  OUTPUT.innerHTML += "<p>You get 3 dollars, now you have " + extraMoney + " dollars</p>";
-}
-
-let name = "Ayush";
+//variables
+let Username = "Anish";
+let year = 2026;
 let age = 15;
-let isAwake = true;
+let money = 20;
+let birthyear;
+let oldage;
+let pocketMoney = 20;
+let newAge = age + 10;
+birthyear = year - age;
+halfMoney = money / 2; 
+
+
+/********************************
+ Main code
+ ********************************/
+
+ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+ OUTPUT.innerHTML = "<h2>Added by Javascript</h2>";
+
+ function start(){
+OUTPUT.innerHTML += ("<p>Hi " + Username + "</p>");
+OUTPUT.innerHTML += ("<p>As of " + year + " you are " + age + " years old" + "</p>");
+OUTPUT.innerHTML += ("<p>You were born in " + (year - age) + "</p>");
+OUTPUT.innerHTML += ("<p>In 10 years you will be " + newAge + " years old" + "</p>");
+OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars" + "</p>" );
+OUTPUT.innerHTML += ("<p>You spend half of your money, now you have " + halfMoney + "</p>" );
+OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + "</p>" );
+displayProduct("Chocolate bar", "4")
+displayProduct("Chips", "3")
+displayProduct("Drink", "2.50")
+OUTPUT.innerHTML += "<p>Less code matters</p>"
+ }
 
 
 
-var num1 = "50";
-num1+num1;
 
-var num2 = "50";
-num2+num2;
+/********************************
+ Functions
+ ********************************/ 
 
-num1 = Number(num1);
-num1+num1;
-
-if (age < 15){
-    console.log("Defininetaly too young");
+function displayProduct(_name, _price){
+    OUTPUT.innerHTML += "<p>" + _name + ": $" + _price + "</p>"
 }
-if  (age >= 15){    
-    console.log("Might be too old");
-}
-if (age === 15){
-    console.log("Just right!");
+
+/*
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let userName = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+} 
+    */
+
+function getFormInput(){
+    let userAge = Number(document.getElementById("ageField").value);
+        let userMoney = Number(document.getElementById("moneyField").value);
+
+    age = userAge;
+    pocketMoney = userMoney;
+    halfMoney = pocketMoney / 2;
+    newAge = age + 10;
+
+    start();
+    
+    if (pocketMoney >= 4){
+        OUTPUT.innerHTML += "<p>You can afford a chocolate bar millionare brodie</p>"
+    }
+
+    if (pocketMoney <= 3.99){
+        OUTPUT.innerHTML += "<p>You cannot afford a chocolate bar homeless kid</p>"
+    }
 }
