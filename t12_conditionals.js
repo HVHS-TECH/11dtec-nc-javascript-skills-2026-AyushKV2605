@@ -1,5 +1,5 @@
 /*********************************/
-console.log("t11_input_from_HTML.js");
+console.log("t21_conditionals.js");
 
 /*********************************
   main code
