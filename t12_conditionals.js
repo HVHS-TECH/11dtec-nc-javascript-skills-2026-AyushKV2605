@@ -1,4 +1,4 @@
-onsole.log("Running t05_JavaScript_and_HTML.js");
+Console.log("Running t05_JavaScript_and_HTML.js");
 
 
 //variables
