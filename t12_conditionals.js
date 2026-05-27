@@ -48,7 +48,7 @@ num2+num2;
 
 num1 = Number(num1);
 num1+num1;
-}
+
 if (age < 15){
     console.log("Defininetaly too young");
 }
