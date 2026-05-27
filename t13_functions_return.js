@@ -63,9 +63,9 @@ let mondayPay = calculatePay(8);
 let tuesdayPay = calculatePay(6);
 
 
-Output.innerHTML += "This week's pay:<br>";
-Output.innerHTML += "Monday: $" + mondayPay + "<br>";
-Output.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
+OUTPUT.innerHTML += "This week's pay:<br>";
+OUTPUT.innerHTML += "Monday: $" + mondayPay + "<br>";
+OUTPUT.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
 
 function calculatePay(_hours){
     let pay = _hours * 18.80; 
