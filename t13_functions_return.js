@@ -58,3 +58,5 @@ if  (age >= 15){
 if (age === 15){
     console.log("Just right!");
 }
+
+function calculatePay
