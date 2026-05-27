@@ -1,4 +1,4 @@
-Console.log("Running t05_JavaScript_and_HTML.js");
+Console.log("Running t12_conditionals.js");
 
 
 //variables
