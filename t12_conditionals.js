@@ -39,15 +39,6 @@ displayProduct("Chocolate bar", "4")
 displayProduct("Chips", "3")
 displayProduct("Drink", "2.50")
 OUTPUT.innerHTML += "<p>Less code matters</p>"
- start();
-    
-    if (pocketMoney >= 4){
-        OUTPUT.innerHTML += "<p>You can afford a chocolate bar </p>"
-    }
-
-    if (pocketMoney <= 3.99){
-        OUTPUT.innerHTML += "<p>You cannot afford a chocolate bar </p>"
-    }
  }
 
 
@@ -78,13 +69,5 @@ function getFormInput(){
     halfMoney = pocketMoney / 2;
     newAge = age + 10;
 
-    start();
     
-    if (pocketMoney >= 4){
-        OUTPUT.innerHTML += "<p>You can afford a chocolate bar </p>"
-    }
-
-    if (pocketMoney <= 3.99){
-        OUTPUT.innerHTML += "<p>You cannot afford a chocolate bar </p>"
-    }
 }
