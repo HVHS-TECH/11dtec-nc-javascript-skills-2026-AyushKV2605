@@ -59,4 +59,10 @@ if (age === 15){
     console.log("Just right!");
 }
 
-function calculatePay
+let mondayPay = calculatePay(8);
+let tuesdayPay = calculatePay(6);
+
+
+Output.innerHTML += "This week's pay:<br>";
+Output.innerHTML += "Monday: $" + mondayPay + "<br>";
+Output.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
