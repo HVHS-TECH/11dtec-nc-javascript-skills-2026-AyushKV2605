@@ -34,9 +34,10 @@ function runTask11() {
   OUTPUT.innerHTML += "<br>This week's pay:<br>";
   OUTPUT.innerHTML += "Monday: $" + mondayPay + "<br>";
   OUTPUT.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
-  
+  function CalculatePay(_hours) {
   let mondayPay = calculatePay(8);
   let tuesdayPay = calculatePay(6);
+}
 
 
 }
