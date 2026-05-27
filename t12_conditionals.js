@@ -1,10 +1,4 @@
-/* Paste your code from task 7 here*/
-
-/****************************************
- * maths
- */
-
-console.log("Running t05_JavaScript_and_HTML.js");
+onsole.log("Running t05_JavaScript_and_HTML.js");
 
 
 //variables
@@ -40,7 +34,7 @@ displayProduct("Chips", "3")
 displayProduct("Drink", "2.50")
 OUTPUT.innerHTML += "<p>Less code matters</p>"
  }
- start();
+    start();
     
     if (pocketMoney >= 4){
         OUTPUT.innerHTML += "<p>You can afford a chocolate bar </p>"
@@ -77,5 +71,5 @@ function getFormInput(){
     halfMoney = pocketMoney / 2;
     newAge = age + 10;
 
-    
+   
 }
