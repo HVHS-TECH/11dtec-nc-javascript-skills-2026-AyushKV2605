@@ -1,4 +1,4 @@
-
+/*********************************/
 console.log("t11_input_from_HTML.js");
 
 /*********************************
@@ -32,6 +32,22 @@ function runTask11() {
   OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
   OUTPUT.innerHTML += "<p>You spend half your money, you now have " + money/2 + " dollars</p>";
   OUTPUT.innerHTML += "<p>You get 3 dollars, now you have " + extraMoney + " dollars</p>";
+}
+
+let name = "Ayush";
+let age = 15;
+let isAwake = true;
+
+
+
+var num1 = "50";
+num1+num1;
+
+var num2 = "50";
+num2+num2;
+
+num1 = Number(num1);
+num1+num1;
 }
 if (age < 15){
     console.log("Defininetaly too young");
