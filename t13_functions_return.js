@@ -31,13 +31,14 @@ function runTask11() {
   OUTPUT.innerHTML += "<p>You have " + money + " dollars</p>";
   OUTPUT.innerHTML += "<p>You spend half your money, you now have " + money / 2 + " dollars</p>";
   OUTPUT.innerHTML += "<p>You get 3 dollars, now you have " + extraMoney + " dollars</p>";
-
-  let mondayPay = calculatePay(8);
-  let tuesdayPay = calculatePay(6);
-
   OUTPUT.innerHTML += "<br>This week's pay:<br>";
   OUTPUT.innerHTML += "Monday: $" + mondayPay + "<br>";
   OUTPUT.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
+  
+  let mondayPay = calculatePay(8);
+  let tuesdayPay = calculatePay(6);
+
+
 }
 
 let name = "Ayush";
