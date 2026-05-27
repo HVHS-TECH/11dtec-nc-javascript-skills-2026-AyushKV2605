@@ -66,3 +66,11 @@ let tuesdayPay = calculatePay(6);
 Output.innerHTML += "This week's pay:<br>";
 Output.innerHTML += "Monday: $" + mondayPay + "<br>";
 Output.innerHTML += "Tuesday: $" + tuesdayPay + "<br>";
+
+function calculatePay(_hours){
+    let pay = _hours * 18.80; 
+    pay = pay - (pay * 0.105);
+    pay = pay - (pay * 0.04);
+    pay = pay + 10;
+    return pay;
+}
