@@ -12,6 +12,7 @@ let pocketMoney = 20;
 let newAge = age + 10;
 birthyear = year - age;
 halfMoney = money / 2; 
+var pocketmoney = UserPocketmoney/2+3;
 
 
 /********************************
