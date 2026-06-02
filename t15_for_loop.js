@@ -3,7 +3,7 @@ Name of Task:
 ****************************/
 //Loop from 0 to 9
 console.log( "Starting Loop");
-for (count = 0; count < 10; count++) {
+for (count = 0; count < 99; count++) {
     console.log("current count: " + count);
 }
 
@@ -17,8 +17,30 @@ console.log( "Loop finished");
 /****************************
  Main Code
  ****************************/
+function singSong() {
 
+    const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+    let bottles = Number(document.getElementById("bottleField").value);
+
+    OUTPUT.innerHTML = "";
+
+    for (let i = bottles; i > 0; i--) {
+
+        if (i === 1) {
+            OUTPUT.innerHTML += "<p>1 bottle of milk on the wall, 1 bottle of milk.</p>";
+            OUTPUT.innerHTML += "<p>Take it down, pass it around, no more bottles of milk on the wall.</p><br>";
+        }
+        else if (i === 2) {
+            OUTPUT.innerHTML += "<p>2 bottles of milk on the wall, 2 bottles of milk.</p>";
+            OUTPUT.innerHTML += "<p>Take one down, pass it around, 1 bottle of milk on the wall.</p><br>";
+        }
+        else {
+            OUTPUT.innerHTML += "<p>" + i + " bottles of milk on the wall, " + i + " bottles of milk.</p>";
+            OUTPUT.innerHTML += "<p>Take one down, pass it around, " + (i - 1) + " bottles of milk on the wall.</p><br>";
+        }
+    }
+}
 
 
  /****************************
