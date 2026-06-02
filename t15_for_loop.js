@@ -1,3 +1,5 @@
+
+
 console.log("Running t14_JavaScript_and_HTML.js");
 
 
@@ -93,4 +95,6 @@ function getFormInput(){
 
   let mondayPay = calculatePay(8);
   let tuesdayPay = calculatePay(6);
+
+  
  
