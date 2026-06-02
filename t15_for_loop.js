@@ -3,7 +3,7 @@ Name of Task:
 ****************************/
 //Loop from 0 to 9
 console.log( "Starting Loop");
-for (count = 0; count < 99; count++) {
+for (count = 99; count < 0; count++) {
     console.log("current count: " + count);
 }
 
