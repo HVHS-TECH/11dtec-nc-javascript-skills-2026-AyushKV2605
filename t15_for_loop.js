@@ -5,7 +5,9 @@ Name of Task:
 console.log( "Starting Loop");
 for (count = 0; count < 10; count++) {
     console.log("current count: " + count);
+}
 
+console.log( "Loop finished");
 //Variables
  let username =" Ayush ";
  let year = 2026;
