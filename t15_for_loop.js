@@ -1,7 +1,10 @@
 /****************************
 Name of Task:
 ****************************/
-console.log( "Running T1-intro.js");
+//Loop from 0 to 9
+console.log( "Starting Loop");
+for (count = 0; count < 10; count++) {
+    console.log("current count: " + count);
 
 //Variables
  let username =" Ayush ";
