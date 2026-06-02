@@ -3,8 +3,8 @@ Name of Task:
 ****************************/
 //Loop from 0 to 9
 console.log( "Starting Loop");
-for (count = 99; count < 0; count++) {
-    console.log("current count: " + count);
+for(let i=99; i>0; i--){
+    console.log( + i + " bottles of milk on the wall, " + i + " bottles of milk. Take one down and pass it around, " + (i-1) + " bottles of milk on the wall.")
 }
 
 console.log( "Loop finished");
