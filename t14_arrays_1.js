@@ -1,98 +1,73 @@
+/****************************
+Functions return
+****************************/
 
-
-console.log("Running t14_JavaScript_and_HTML.js");
-
+console.log("Running t13_functions_return.js")
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+OUTPUT.innerHTML += "<h2>added by javascrript</h2>";
 
 //variables
-let Username = "Ayush";
+
+/****************************
+main code
+****************************/
+function start(){
+const NAME_FIELD = document.getElementById("nameField");
+let Username = NAME_FIELD.value;
+const AGE_FIELD = document.getElementById("ageField");
+let Userage = Number(AGE_FIELD.value);
+const MONEY_FIELD = document.getElementById("moneyField");
+let UserpocketMoney = Number(MONEY_FIELD.value);
+let name = "Ayush";
+let pocketMoney = 2;
+let age = 16;
 let year = 2026;
-let age = 15;
-let money = 20;
-let birthyear;
-let oldage;
-let pocketMoney = 20;
-let newAge = age + 10;
-birthyear = year - age;
-halfMoney = money / 2; 
+let chocolatePrice = 4
+let drinkPrice = 2.5
+let chipsPrice = 3
+var yearBorn = year-Userage;
+var tenYears = Userage+10;
+var halfMoney = UserpocketMoney/2;
+var money = UserpocketMoney/2+3;
+OUTPUT.innerHTML += "<p>Hi "+ Username;
+OUTPUT.innerHTML += "<p>as of " + year + " you are " + Userage + " years old";
+OUTPUT.innerHTML += "<p>you were born in " + yearBorn;
+OUTPUT.innerHTML += "<p>In 10 years, you will be " + tenYears;
+OUTPUT.innerHTML += "<p>you have " + UserpocketMoney + " dollars.";
+OUTPUT.innerHTML += "<p>you spend half of your money, now you have " + halfMoney + " dollars";
+OUTPUT.innerHTML += "<p>then you get $3, you now have " + money + " dollars" ;
 
+welcome()
+displayProduct("<p>chocolate: ", "$4.00");
+displayProduct("<p>chips: ", "$3.00");
+displayProduct("<p>drink: ", "$2.50");
+function calculateChange(_money, _price){
+let change = _money - _price
+return change;
+}
+    if (money >= 4){
+        OUTPUT.innerHTML += "<p>you have enough to buy a chocolate bar";
+        OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, chocolatePrice)+" change";
+    }
+    else{
+        OUTPUT.innerHTML += "<p>you do not have enough to buy a chocolate bar"
+    }
+}
 
-/********************************
- Main code
- ********************************/
-
- const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- OUTPUT.innerHTML = "<h2>Added by Javascript</h2>";
-
- function start(){
-OUTPUT.innerHTML += ("<p>Hi " + Username + "</p>");
-OUTPUT.innerHTML += ("<p>As of " + year + " you are " + age + " years old" + "</p>");
-OUTPUT.innerHTML += ("<p>You were born in " + (year - age) + "</p>");
-OUTPUT.innerHTML += ("<p>In 10 years you will be " + newAge + " years old" + "</p>");
-OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars" + "</p>" );
-OUTPUT.innerHTML += ("<p>You spend half of your money, now you have " + halfMoney + "</p>" );
-OUTPUT.innerHTML += ("<p>Then you get $3, now you have " + (halfMoney + 3) + "</p>" );
-displayProduct("Chocolate bar", "4")
-displayProduct("Chips", "3")
-displayProduct("Drink", "2.50")
-OUTPUT.innerHTML += "<p>Less code matters</p>"
-  OUTPUT.innerHTML += "This week's pay:<br>";
-  OUTPUT.innerHTML += "Monday: $"+mondayPay+"<br>";
-  OUTPUT.innerHTML += "Tuesday: $"+tuesdayPay+"<br>";
-
-  let classArray = ["Alice", "Bob", "Kaia", "Olivia", "Aroha", "Josh"];
-  let choice = CHOOSE_FIELD.value;
-  OUTPUT.innerHTML = "You chose: "+classArray[choice]+ "<br>";
-  OUTPUT.innerHTML = classArray;
-
-
-OUTPUT.innerHTML = "The " + choice + " person in the class is "+ classArray[choice];
-
- }
-
-
-
-
-/********************************
- Functions
- ********************************/ 
+/****************************
+functions
+****************************/
+function welcome(){
+    OUTPUT.innerHTML += "<p>welcome to the shop:";
+}
 
 function displayProduct(_name, _price){
-    OUTPUT.innerHTML += "<p>" + _name + ": $" + _price + "</p>"
+    OUTPUT.innerHTML += _name + _price
 }
 
-/*
-function getFormInput(){
-    const NAME_FIELD = document.getElementById("nameField");
-    let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
-} 
-    */
 
-function getFormInput(){
-    let userAge = Number(document.getElementById("ageField").value);
-        let userMoney = Number(document.getElementById("moneyField").value);
-
-    age = userAge;
-    pocketMoney = userMoney;
-    halfMoney = pocketMoney / 2;
-    newAge = age + 10;
-
-    start();
-    
-    if (pocketMoney >= 4){
-        OUTPUT.innerHTML += "<p>You can afford a chocolate bar </p>"
-    }
-
-    if (pocketMoney <= 3.99){
-        OUTPUT.innerHTML += "<p>You cannot afford a chocolate bar </p>"
-    }
-
+function getFormInput () {
+let chocolateMessages = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
+let rating = Number(document.getElementById("ratingField").value);
+OUTPUT.innerHTML += "<p>" + chocolateMessages[rating] + "</p>";
 }
-
- function calculatePay(_hours){
-    return _hours * 10;
-  }
-
-  let mondayPay = calculatePay(8);
-  let tuesdayPay = calculatePay(6);
- 
