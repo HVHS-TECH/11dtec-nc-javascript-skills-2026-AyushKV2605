@@ -73,6 +73,4 @@ OUTPUT.innerHTML += "<p>" + chocolateMessages[rating] + "</p>";
 }
 
 
-let classArray = ["Alice", "Bob", "Kaia", "Olivia", "Aroha", "Josh"];
-OUTPUT.innerHTML = "The fifth student in the class is " + classArray[4];
 
