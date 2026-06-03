@@ -73,4 +73,4 @@ OUTPUT.innerHTML += "<p>" + chocolateMessages[rating] + "</p>";
 }
 
 
-let classArray = ["Alice", "Bob", "", ""];
+let classArray = ["Alice", "Bob", "Kaia", "Olivia", ];
