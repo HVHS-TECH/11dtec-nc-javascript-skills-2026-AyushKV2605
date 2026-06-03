@@ -98,4 +98,9 @@ function getFormInput(){
 
   let classarray = ["Alice", "Bob", "Kaia", "Olivia", "Aroha", "Josh"];
   OUTPUT.innerHTML = "The fifth person in the class is "+ classarray[4];
+
+   let classarray = ["Alice", "Bob", "Kaia", "Olivia", "Aroha", "Josh"];
+   OUTPUT.innerHTML = "There are " + classarray.length + " people in the class";
+
+   
  
