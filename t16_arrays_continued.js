@@ -96,5 +96,6 @@ function getFormInput(){
   let mondayPay = calculatePay(8);
   let tuesdayPay = calculatePay(6);
 
-  
+  let classarray = ["Alice", "Bob", "Kaia", "Olivia", "Aroha", "Josh"];
+  OUTPUT.innerHTML = "The fifth person in the class is "+ classarray[4];
  
