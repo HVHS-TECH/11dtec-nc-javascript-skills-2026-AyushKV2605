@@ -29,6 +29,8 @@ var yearBorn = year-Userage;
 var tenYears = Userage+10;
 var halfMoney = UserpocketMoney/2;
 var money = UserpocketMoney/2+3;
+let item;
+let listarray = [];
 OUTPUT.innerHTML += "<p>Hi "+ Username;
 OUTPUT.innerHTML += "<p>as of " + year + " you are " + Userage + " years old";
 OUTPUT.innerHTML += "<p>you were born in " + yearBorn;
@@ -70,6 +72,21 @@ function getFormInput () {
 let chocolateMessages = ["You loath chocolate","Chocolate is meh","Chocolate is pretty good","Chocolate is the best thing EVER!!!!"];
 let rating = Number(document.getElementById("ratingField").value);
 OUTPUT.innerHTML += "<p>" + chocolateMessages[rating] + "</p>";
+}
+
+
+function getFormInput () {
+    const LIST_FIELD = document.getElementById("listField");
+    item = LIST_FIELD.value;
+    listarray.push(item)
+    OUTPUT.innerHTML = "<p>You have added "+ item + " to the list</p>";
+}
+
+function getFormInput () {
+    OUTPUT.innerHTML = "<h1>your list:</h1>";
+    for (let i=0; i<listarray.length; i++){
+        OUTPUT.innerHTML += "<p>Item " + (i+1) + ": " + listarray[i] + "</p>";
+    }
 }
 
 

@@ -37,7 +37,20 @@
 <input id="ratingField" placeholder="choose from 0-3">
 
 <input type="submit" onClick=getFormInput()>
+
+
 </form>
+<form onsubmit="return false;">
+  <label for="formlist" >Add an item to your list:</label>
+  <input type="text" id="listField" name="formlist" placeholder="Item">
+  <input type="submit" onClick=getFormInput() value="Add">
+  </form>
+
+  <form onsubmit="return false;">
+  <input type="submit" onClick=getFormInput() value="View list">
+  </form>
+
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
